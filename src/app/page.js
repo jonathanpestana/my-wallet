@@ -20,13 +20,14 @@ export default function Home() {
   }
 
   return (
-    <main>
+    <main className="bg-white flex flex-col items-center self-center text-center space-y-5 w-1/3 h-1/2">
+      <h1>Minha Carteira</h1>
       <form>
         <label>
           Nome
-          <input type="text" onChange={ handleChange } />
+          <input className="w-full border" type="text" onChange={ handleChange } />
         </label>
-        <button onClick={ handleClick }>Entrar</button>
+        <button className="w-full" onClick={ handleClick }>Entrar</button>
       </form>
     </main>
   )
